@@ -10,7 +10,8 @@ function SearchBar({ characters, setSearchResults }) {
 
     const resultsArray = characters.filter(
       character => 
-        character.name.toLowerCase().includes(e.target.value.toLowerCase())
+        character.name.toLowerCase().includes(e.target.value.toLowerCase()) ||
+        character.homeworld.toLowerCase().includes(e.target.value.toLowerCase())
     );
     
     setSearchResults(resultsArray);

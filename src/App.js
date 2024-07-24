@@ -31,9 +31,9 @@ function App() {
   return (
     <div className='mainPage'>
       <SearchBar characters={allCharacters} setSearchResults={setSearchResults}></SearchBar>
-      <div className='people'>
-        {isLoading ? <div>Loading...</div> : searchResults.map((character, i) => 
-          <Person key={i} character={character}></Person>
+      <div className='characters'>
+        {isLoading ? <div>Loading...</div> : searchResults.map((character, index) => 
+          <Person key={index} character={character} searchResults={searchResults} setSearchResults={setSearchResults}></Person>
         )}
       </div>
     </div>

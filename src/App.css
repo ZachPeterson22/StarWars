@@ -12,7 +12,7 @@
   margin: 15px;
 }
 
-.people {
+.characters {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -21,7 +21,7 @@
   margin: 15px;
 }
 
-.person {
+.character {
   display: flex;
   flex-direction: column;
   justify-content: center;
